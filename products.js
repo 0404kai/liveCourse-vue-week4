@@ -104,7 +104,7 @@ app.component("productModal", {
       let http = "post";
       // 透過 isNew 判斷是新增或編輯產品
       if (!this.isNew) {
-        url = `${this.apiUrl}/api/${this.apiPath}/admin/product/${this.product.id}`;
+        url = `${url}/${this.product.id}`;
         http = "put";
       }
 
